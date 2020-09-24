@@ -58,6 +58,12 @@
   border: 2px solid #f26002;
   border-radius: 22.5px;
   padding: 10px 25px 10px 26px;
+  transition: 0.3s;
+}
+
+.main__one--go:hover {
+  background-color: #f26002;
+  color: #ffffff;
 }
 
 @media all and (min-width: 768px) {
@@ -171,6 +177,12 @@
   text-align: center;
   color: #ffffff;
   text-transform: capitalize;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.main__two--btn:hover {
+  opacity: 1;
 }
 
 @media all and (min-width: 768px) {

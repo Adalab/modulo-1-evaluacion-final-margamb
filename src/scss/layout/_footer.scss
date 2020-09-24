@@ -5,8 +5,6 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 45px;
-  padding-top: 60px;
-  position: relative;
 }
 
 .footer__ul--one {
@@ -30,12 +28,31 @@ a,
   height: 45px;
   background-color: #ffffff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 22.5px;
+  // border-radius: 22.5px;
   border-radius: 100%;
   object-fit: contain;
   padding: 5px 10px;
-  position: absolute;
-  top: -20px;
+  position: relative;
+  top: -24px;
+  animation-duration: 3s;
+  animation-name: arrowfooter;
+  animation-iteration-count: 3;
+}
+
+@keyframes arrowfooter {
+  0% {
+    opacity: 0.2;
+    transform: scale(1.5) rotate(-150deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(2) rotate(-75deg);
+    background-color: #304268;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .footer__copy {
@@ -85,14 +102,7 @@ a,
   }
 
   .footer__copy {
-    order: -1;
-  }
-
-  // .footer__img--arrow {
-  //   bottom: 260px;
-  // }
-
-  .footer__copy {
     text-align: left;
+    order: -1;
   }
 }
