@@ -1,0 +1,218 @@
+// main one
+
+.main__one {
+  width: 100%;
+  background-color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  margin: auto;
+}
+
+.main__one--small {
+  color: #8ccbea;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+}
+
+.main__one--title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.main__one--p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.main__one--go {
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  // width: 25px;
+  // height: 45px;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  // text-align: center;
+  color: #f26002;
+  border: 2px solid #f26002;
+  border-radius: 22.5px;
+  padding: 10px 25px 10px 26px;
+}
+
+@media all and (min-width: 768px) {
+  .main__one {
+    padding: 30px 39px 45px 39px;
+    width: 690px;
+    margin: auto;
+  }
+  .main__one--title {
+    font-size: 26px;
+  }
+  .main__one--p {
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .main__one {
+    width: 730px;
+    margin: auto;
+  }
+  .main__one--small {
+    font-size: 16px;
+  }
+  .main__one--title {
+    font-size: 32px;
+  }
+}
+
+// finish main one
+
+// main two
+
+.main__two {
+  width: 100%;
+  background-color: #eff9ff;
+  padding: 30px 15px 60px 15px;
+}
+
+.main__two--articles {
+  // width: 184px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  // margin-left: 70px;
+  // margin-right: 70px;
+}
+
+.main__two--title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 45px;
+}
+
+.main__two--articles--single--title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.main__two--articles--single {
+  margin-bottom: 45px;
+  width: 184px;
+}
+.main__two--articles--single--text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.main__two--btn {
+  max-width: 184px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: #f26002;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+@media all and (min-width: 768px) {
+  .main__two--articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .main__two--articles--single {
+    width: 210px;
+  }
+  .main__two--title {
+    text-align: center;
+  }
+  .main__two--title {
+    font-size: 26px;
+  }
+  .main__two--articles--single--title {
+    font-size: 24px;
+  }
+  .main__two--articles--single--text {
+    font-size: 20px;
+  }
+  .main__one--go {
+    padding: 10px 32.5px 10px 32.5px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .main__two--title {
+    font-size: 32px;
+  }
+  .main__two--articles--single {
+    width: 350px;
+  }
+  .main__one--go {
+    padding: 10px 60.5px 10px 60.5px;
+  }
+}
