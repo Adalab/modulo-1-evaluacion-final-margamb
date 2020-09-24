@@ -105,11 +105,18 @@
 }
 
 .main__two--articles {
-  // width: 184px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 45px;
+  width: 184px;
+  margin: auto auto 45px auto;
+
+  // background-color: red;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // text-align: center;
   // margin-left: 70px;
   // margin-right: 70px;
 }
@@ -139,10 +146,24 @@
   color: #000000;
 }
 
-.main__two--articles--single {
-  margin-bottom: 45px;
-  width: 184px;
-}
+// .main__two--articles--one {
+//   grid-template-columns: 1;
+//   grid-template-rows: 1/2;
+//   margin: auto;
+// }
+
+// .main__two--articles--two {
+//   grid-template-columns: 1;
+//   grid-template-rows: 2/3;
+//   margin: auto;
+// }
+
+// .main__two--articles--three {
+//   grid-template-columns: 1;
+//   grid-template-rows: 3/4;
+//   // margin: auto;
+// }
+
 .main__two--articles--single--text {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -161,7 +182,6 @@
   border-radius: 22.5px;
   background-color: #f26002;
   text-decoration: none;
-  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,23 +207,20 @@
 
 @media all and (min-width: 768px) {
   .main__two--articles {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding-left: 38px;
-    padding-right: 38px;
+    width: 690px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    margin-bottom: 45px;
   }
 
-  .main__two--articles--single {
-    width: 210px;
-  }
   .main__two--title {
     text-align: center;
-  }
-  .main__two--title {
     font-size: 26px;
   }
+
   .main__two--articles--single--title {
     font-size: 24px;
   }
@@ -216,6 +233,16 @@
 }
 
 @media all and (min-width: 1200px) {
+  .main__two--articles {
+    width: 1010px;
+    align-items: start;
+  }
+
+  .main__two--articles--single--title,
+  .main__two--articles--single--text {
+    align-self: start;
+  }
+
   .main__two {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -223,8 +250,9 @@
   .main__two--title {
     font-size: 32px;
   }
-  .main__two--articles--single {
-    width: 350px;
+
+  .main__two--articles--single--title {
+    padding-bottom: 14px;
   }
   .main__one--go {
     padding: 10px 60.5px 10px 60.5px;
