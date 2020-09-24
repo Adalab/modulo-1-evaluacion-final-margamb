@@ -3,10 +3,7 @@
 .main__one {
   width: 100%;
   background-color: #ffffff;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding: 30px 15px 45px 15px;
   margin: auto;
 }
 
@@ -81,6 +78,7 @@
   .main__one {
     width: 730px;
     margin: auto;
+    padding-top: 60px;
   }
   .main__one--small {
     font-size: 16px;
@@ -206,6 +204,10 @@
 }
 
 @media all and (min-width: 1200px) {
+  .main__two {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .main__two--title {
     font-size: 32px;
   }
