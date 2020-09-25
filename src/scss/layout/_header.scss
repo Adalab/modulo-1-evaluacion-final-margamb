@@ -8,75 +8,72 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-}
 
-.header__burger {
-  width: 44px;
-  height: 44px;
-  background-color: $color-burger;
-  padding: 14px 15px 14px 15px;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.header__scroll {
-  padding: 5px 10px;
-  width: 20px;
-  height: 11.7px;
-  object-fit: contain;
-  width: 45px;
-  height: 45px;
-  border-radius: 22.5px;
-  background-color: $color-white;
-  margin-bottom: 53px;
-}
-
-.header__title {
-  width: 290px;
-  font-family: $font-main;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  font-size: 42px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.31;
-  letter-spacing: normal;
-  text-align: center;
-  color: $color-white;
-  text-transform: uppercase;
-}
-
-.header__subtitle {
-  font-family: $font-secondary;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: $color-white;
-  margin-bottom: 45px;
-}
-
-@media all and (min-width: 768px) {
-  .header__title {
-    width: 690px;
-    font-size: 80px;
-  }
-  .header__subtitle {
-    font-size: 24px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .header__title {
-    width: 730px;
-    font-size: 100px;
+  &__burger {
+    width: 44px;
+    height: 44px;
+    background-color: $color-burger;
+    padding: 14px 15px 14px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
-  .header__scroll {
-    margin-bottom: 13px;
+  &__scroll {
+    padding: 5px 10px;
+    width: 20px;
+    height: 11.7px;
+    object-fit: contain;
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: $color-white;
+    margin-bottom: 53px;
+
+    @media all and (min-width: $desktop-size) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__title {
+    width: 290px;
+    font-family: $font-main;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    font-size: 42px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-white;
+    text-transform: uppercase;
+
+    @media all and (min-width: $tablet-size) {
+      width: 690px;
+      font-size: 80px;
+    }
+
+    @media all and (min-width: $desktop-size) {
+      width: 730px;
+      font-size: 100px;
+    }
+  }
+
+  &__subtitle {
+    font-family: $font-secondary;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 45px;
+
+    @media all and (min-width: $tablet-size) {
+      font-size: 24px;
+    }
   }
 }
