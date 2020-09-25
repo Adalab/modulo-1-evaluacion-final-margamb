@@ -5,231 +5,229 @@
   background-color: $color-white;
   padding: 30px 15px 45px 15px;
   margin: auto;
-}
 
-.main__one--small {
-  color: $color-small;
-  font-family: $font-secondary;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.14;
-  letter-spacing: normal;
-}
-
-.main__one--title {
-  font-family: $font-main;
-  font-size: 24px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  color: $color-black;
-}
-
-.main__one--p {
-  font-family: $font-secondary;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  color: $color-grey;
-  padding-top: 15px;
-  padding-bottom: 30px;
-}
-
-.main__one--go {
-  font-family: $font-secondary;
-  text-transform: capitalize;
-  font-size: 20px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.25;
-  letter-spacing: normal;
-  color: $color-link;
-  border: 2px solid $color-link;
-  border-radius: 22.5px;
-  padding: 10px 25px 10px 26px;
-  transition: 0.3s;
-}
-
-.main__one--go:hover {
-  background-color: $color-link;
-  color: $color-white;
-}
-
-@media all and (min-width: 768px) {
-  .main__one {
+  @media all and (min-width: $tablet-size) {
     padding: 30px 39px 45px 39px;
     width: 690px;
     margin: auto;
   }
-  .main__one--title {
-    font-size: 26px;
-  }
-  .main__one--p {
-    font-size: 20px;
-  }
 
-  .main__one--go {
-    padding: 10px 32.5px 10px 32.5px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .main__one {
+  @media all and (min-width: $desktop-size) {
     width: 730px;
     margin: auto;
     padding-top: 60px;
   }
-  .main__one--small {
-    font-size: 16px;
-  }
-  .main__one--title {
-    font-size: 32px;
+
+  &--small {
+    color: $color-small;
+    font-family: $font-secondary;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+
+    @media all and (min-width: $desktop-size) {
+      font-size: 16px;
+    }
   }
 
-  .main__one--go {
-    padding: 10px 60.5px 10px 60.5px;
+  &--title {
+    font-family: $font-main;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: $color-black;
+
+    @media all and (min-width: $tablet-size) {
+      font-size: 26px;
+    }
+
+    @media all and (min-width: $desktop-size) {
+      font-size: 32px;
+    }
+  }
+
+  &--p {
+    font-family: $font-secondary;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: $color-grey;
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+    @media all and (min-width: $tablet-size) {
+      font-size: 20px;
+    }
+  }
+
+  &--go {
+    font-family: $font-secondary;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    text-decoration: none;
+    color: $color-link;
+    border: 2px solid $color-link;
+    border-radius: 22.5px;
+    padding: 10px 25px 10px 26px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $color-link;
+      color: $color-white;
+    }
+
+    @media all and (min-width: $tablet-size) {
+      padding: 10px 32.5px 10px 32.5px;
+    }
+
+    @media all and (min-width: $desktop-size) {
+      padding: 10px 60.5px 10px 60.5px;
+    }
   }
 }
 
 // finish main one
-
 // main two
 
 .main__two {
   width: 100%;
   background-color: $color-main-two;
   padding: 30px 15px 60px 15px;
-}
 
-.main__two--articles {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 45px;
-  width: 184px;
-  margin: auto auto 45px auto;
-}
-
-.main__two--title {
-  font-family: $font-main;
-  font-size: 24px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: center;
-  color: $color-black;
-  padding-bottom: 45px;
-}
-
-.main__two--articles--single--title {
-  font-family: $font-main;
-  font-size: 18px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: center;
-  color: $color-black;
-}
-
-.main__two--articles--single--text {
-  font-family: $font-secondary;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: center;
-  color: $color-black;
-}
-
-.main__two--btn {
-  max-width: 184px;
-  height: 45px;
-  border-radius: 22.5px;
-  background-color: $color-link;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  font-family: $font-secondary;
-  font-size: 20px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.25;
-  letter-spacing: normal;
-  color: $color-white;
-  text-transform: capitalize;
-  opacity: 1;
-  transition: 0.5s;
-}
-
-.main__two--btn:hover {
-  opacity: 0.6;
-}
-
-@media all and (min-width: 768px) {
-  .main__two--articles {
-    width: 690px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    column-gap: 30px;
-    margin-bottom: 45px;
-  }
-
-  .main__two--title {
-    text-align: center;
-    font-size: 26px;
-  }
-
-  .main__two--articles--single--title {
-    font-size: 24px;
-  }
-  .main__two--articles--single--text {
-    font-size: 20px;
-  }
-
-  .main__two--btn {
-    max-width: 210px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .main__two--articles {
-    width: 1010px;
-    align-items: start;
-  }
-
-  .main__two {
+  @media all and (min-width: $desktop-size) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .main__two--title {
-    font-size: 32px;
+
+  &--title {
+    font-family: $font-main;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-black;
+    padding-bottom: 45px;
+
+    @media all and (min-width: $tablet-size) {
+      text-align: center;
+      font-size: 26px;
+    }
+
+    @media all and (min-width: $desktop-size) {
+      font-size: 32px;
+    }
   }
 
-  .main__two--articles--single--title {
-    padding-bottom: 14px;
+  &--articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 45px;
+    width: 184px;
+    margin: auto auto 45px auto;
+
+    @media all and (min-width: $tablet-size) {
+      width: 690px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      column-gap: 30px;
+      margin-bottom: 45px;
+    }
+
+    @media all and (min-width: $desktop-size) {
+      width: 1010px;
+      align-items: start;
+    }
+
+    &--single--title {
+      font-family: $font-main;
+      font-size: 18px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+      color: $color-black;
+
+      @media all and (min-width: $tablet-size) {
+        font-size: 24px;
+      }
+
+      @media all and (min-width: $desktop-size) {
+        padding-bottom: 14px;
+      }
+    }
+
+    &--single--text {
+      font-family: $font-secondary;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+      color: $color-black;
+
+      @media all and (min-width: $tablet-size) {
+        font-size: 20px;
+      }
+    }
   }
 
-  .main__two--btn {
-    margin-top: 60px;
-    max-width: 255px;
+  &--btn {
+    max-width: 184px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: $color-link;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: $font-secondary;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    color: $color-white;
+    text-transform: capitalize;
+    opacity: 1;
+    transition: 0.5s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @media all and (min-width: $tablet-size) {
+      max-width: 210px;
+    }
+
+    @media all and (min-width: $desktop-size) {
+      margin-top: 60px;
+      max-width: 255px;
+    }
   }
 }
