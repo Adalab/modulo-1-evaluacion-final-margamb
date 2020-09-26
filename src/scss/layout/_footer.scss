@@ -7,22 +7,35 @@
   padding-bottom: 45px;
 
   @media all and (min-width: $tablet-size) {
-    padding: 0px 39px 0px 39px;
-  }
-
-  &__uls {
-    padding-bottom: 30px;
+    padding: 0px 39px 45px 39px;
   }
 
   &__ul {
     @media all and (min-width: $tablet-size) {
-      width: 690px;
       display: flex;
+      width: 690px;
       justify-content: space-between;
+      align-items: flex-start;
+    }
+    @media all and (min-width: $desktop-size) {
+      width: 540px;
     }
   }
 
-  &__ul--li {
+  &__uls--one,
+  &__uls--two {
+    padding-bottom: 30px;
+    width: 210px;
+    @media all and (min-width: $tablet-size) {
+      padding-bottom: 0;
+    }
+    @media all and (min-width: $desktop-size) {
+      width: 161px;
+    }
+  }
+
+  &__ul--one--li,
+  &__ul--two--li {
     list-style: none;
     text-align: center;
     font-family: $font-secondary;
@@ -61,6 +74,7 @@
   }
 
   &__copy {
+    width: 210px;
     text-align: center;
     font-family: $font-secondary;
     font-size: 14px;
@@ -76,6 +90,10 @@
     @media all and (min-width: $tablet-size) {
       text-align: left;
       order: -1;
+    }
+
+    @media all and (min-width: $desktop-size) {
+      width: 159px;
     }
 
     &--footer-heart {

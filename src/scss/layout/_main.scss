@@ -1,101 +1,127 @@
 // main one
 
+// Ha dos formas de hacerlo:
+// 1 -> Modificando los paddings cada vez que cambia de dispositivo, se iria adaptando a la pantalla (o mejor opcion -> utilizando witdth en %)
+//-- padding movil -> padding: 30px 15px 45px 15px;
+
+//padding tablet
+// @media all and (min-width: $tablet-size) {
+//   padding: 30px 39px 60px 39px;
+// }
+
+//padding desktop
+// @media all and (min-width: $desktop-size) {
+//   padding: 60px 275px;
+// }
+
+// 2 -> Con anchos fijos en cada pantalla, se cambiaria cada vez que cambias de tamaño de pantalla.
+
+// He probado de las dos formas -> Al final he utilizado anchos fijos
+
 .main__one {
   width: 100%;
   background-color: $color-white;
-  padding: 30px 15px 45px 15px;
-  margin: auto;
 
-  @media all and (min-width: $tablet-size) {
-    padding: 30px 39px 45px 39px;
-    width: 690px;
-    margin: auto;
-  }
-
-  @media all and (min-width: $desktop-size) {
-    width: 730px;
-    margin: auto;
-    padding-top: 60px;
-  }
-
-  &--small {
-    color: $color-small;
-    font-family: $font-secondary;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.14;
-    letter-spacing: normal;
-
-    @media all and (min-width: $desktop-size) {
-      font-size: 16px;
-    }
-  }
-
-  &--title {
-    font-family: $font-main;
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    color: $color-black;
+  &--container {
+    width: 290px;
+    margin: 30px auto 45px auto;
 
     @media all and (min-width: $tablet-size) {
-      font-size: 26px;
+      width: 690px;
+      margin: 30px auto 60px auto;
     }
 
     @media all and (min-width: $desktop-size) {
-      font-size: 32px;
+      width: 730px;
+      margin: 60px auto;
     }
-  }
 
-  &--p {
-    font-family: $font-secondary;
-    font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-    color: $color-grey;
-    padding-top: 15px;
-    padding-bottom: 30px;
+    &--small {
+      color: $color-small;
+      font-family: $font-secondary;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.14;
+      letter-spacing: normal;
+      margin-bottom: 1px;
 
-    @media all and (min-width: $tablet-size) {
+      @media all and (min-width: $tablet-size) {
+        margin-bottom: 0px;
+      }
+
+      @media all and (min-width: $desktop-size) {
+        font-size: 16px;
+      }
+    }
+
+    &--title {
+      font-family: $font-main;
+      font-size: 24px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.25;
+      letter-spacing: normal;
+      color: $color-black;
+
+      @media all and (min-width: $tablet-size) {
+        font-size: 26px;
+      }
+
+      @media all and (min-width: $desktop-size) {
+        font-size: 32px;
+      }
+    }
+
+    &--p {
+      font-family: $font-secondary;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      color: $color-grey;
+      padding-top: 15px;
+      padding-bottom: 30px;
+
+      @media all and (min-width: $tablet-size) {
+        font-size: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+
+    &--go {
+      font-family: $font-secondary;
+      text-transform: capitalize;
       font-size: 20px;
-    }
-  }
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.25;
+      letter-spacing: normal;
+      text-decoration: none;
+      color: $color-link;
+      border: 2px solid $color-link;
+      border-radius: 22.5px;
+      padding: 8.5px 23.3px 8.5px 23.3px;
+      transition: 0.3s;
 
-  &--go {
-    font-family: $font-secondary;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.25;
-    letter-spacing: normal;
-    text-decoration: none;
-    color: $color-link;
-    border: 2px solid $color-link;
-    border-radius: 22.5px;
-    padding: 10px 25px 10px 26px;
-    transition: 0.3s;
+      &:hover {
+        background-color: $color-link;
+        color: $color-white;
+      }
 
-    &:hover {
-      background-color: $color-link;
-      color: $color-white;
-    }
+      @media all and (min-width: $tablet-size) {
+        padding: 8.5px 31px 8.5px 31px;
+      }
 
-    @media all and (min-width: $tablet-size) {
-      padding: 10px 32.5px 10px 32.5px;
-    }
-
-    @media all and (min-width: $desktop-size) {
-      padding: 10px 60.5px 10px 60.5px;
+      @media all and (min-width: $desktop-size) {
+        padding: 8.5px 65.5px 8.5px 65.5px;
+      }
     }
   }
 }
@@ -171,9 +197,6 @@
 
       @media all and (min-width: $tablet-size) {
         font-size: 24px;
-      }
-
-      @media all and (min-width: $desktop-size) {
         padding-bottom: 14px;
       }
     }
