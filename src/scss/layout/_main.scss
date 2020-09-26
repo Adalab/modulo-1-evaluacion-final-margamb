@@ -1,6 +1,6 @@
 // main one
 
-// Ha dos formas de hacerlo:
+// Hay dos formas de hacerlo:
 // 1 -> Modificando los paddings cada vez que cambia de dispositivo, se iria adaptando a la pantalla (o mejor opcion -> utilizando witdth en %)
 //-- padding movil -> padding: 30px 15px 45px 15px;
 
@@ -28,23 +28,19 @@
 
     @media all and (min-width: $tablet-size) {
       width: 690px;
-      margin: 30px auto 60px auto;
+      margin-bottom: 60px;
     }
 
     @media all and (min-width: $desktop-size) {
       width: 730px;
-      margin: 60px auto;
+      margin-top: 60px;
     }
 
     &--small {
       color: $color-small;
       font-family: $font-secondary;
       font-size: 14px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 2.14;
-      letter-spacing: normal;
       margin-bottom: 1px;
 
       @media all and (min-width: $tablet-size) {
@@ -60,10 +56,7 @@
       font-family: $font-main;
       font-size: 24px;
       font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 1.25;
-      letter-spacing: normal;
       color: $color-black;
 
       @media all and (min-width: $tablet-size) {
@@ -78,11 +71,7 @@
     &--p {
       font-family: $font-secondary;
       font-size: 18px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 1.67;
-      letter-spacing: normal;
       color: $color-grey;
       padding-top: 15px;
       padding-bottom: 30px;
@@ -90,7 +79,6 @@
       @media all and (min-width: $tablet-size) {
         font-size: 20px;
         padding-top: 30px;
-        padding-bottom: 30px;
       }
     }
 
@@ -98,11 +86,7 @@
       font-family: $font-secondary;
       text-transform: capitalize;
       font-size: 20px;
-      font-weight: 500;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 2.25;
-      letter-spacing: normal;
       text-decoration: none;
       color: $color-link;
       border: 2px solid $color-link;
@@ -116,11 +100,13 @@
       }
 
       @media all and (min-width: $tablet-size) {
-        padding: 8.5px 31px 8.5px 31px;
+        padding-left: 31px;
+        padding-right: 31px;
       }
 
       @media all and (min-width: $desktop-size) {
-        padding: 8.5px 65.5px 8.5px 65.5px;
+        padding-left: 65.5px;
+        padding-right: 65.5px;
       }
     }
   }
@@ -136,23 +122,18 @@
 
   @media all and (min-width: $desktop-size) {
     padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   &--title {
     font-family: $font-main;
     font-size: 24px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.25;
-    letter-spacing: normal;
     text-align: center;
     color: $color-black;
     padding-bottom: 45px;
 
     @media all and (min-width: $tablet-size) {
-      text-align: center;
       font-size: 26px;
     }
 
@@ -167,16 +148,14 @@
     grid-template-rows: repeat(3, 1fr);
     row-gap: 45px;
     width: 184px;
-    margin: auto auto 45px auto;
+    margin: 0 auto 45px auto;
 
     @media all and (min-width: $tablet-size) {
       width: 690px;
-      margin: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr;
       column-gap: 30px;
-      margin-bottom: 45px;
     }
 
     @media all and (min-width: $desktop-size) {
@@ -188,10 +167,7 @@
       font-family: $font-main;
       font-size: 18px;
       font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 1.67;
-      letter-spacing: normal;
       text-align: center;
       color: $color-black;
 
@@ -204,11 +180,7 @@
     &--single--text {
       font-family: $font-secondary;
       font-size: 18px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 1.67;
-      letter-spacing: normal;
       text-align: center;
       color: $color-black;
 
@@ -230,11 +202,7 @@
     margin: auto;
     font-family: $font-secondary;
     font-size: 20px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2.25;
-    letter-spacing: normal;
     color: $color-white;
     text-transform: capitalize;
     opacity: 1;
