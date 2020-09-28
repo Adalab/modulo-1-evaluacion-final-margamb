@@ -1,0 +1,16 @@
+.new-section {
+  width: 100vw;
+  background-color: $color-link;
+  text-align: center;
+  color: $color-white;
+}
+
+@media all and (min-width: $tablet-size) {
+  .new-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: $color-footer;
+    display: flex;
+    justify-content: space-between;
+  }
+}
